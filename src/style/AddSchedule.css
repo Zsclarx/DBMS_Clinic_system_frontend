@@ -1,0 +1,107 @@
+.add-schedule-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('./vecteezy_healthcare-theme-3d-illustration-of-an-empty-emergency-room_29284412.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.add-schedule {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #34495e;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button, .submit-button {
+    width: 100px;
+    padding: 10px; /* Ensures same padding */
+    margin: 0; /* Removes any default margin */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    line-height: 1.5; /* Ensures same line height */
+    color: white;
+    box-sizing: border-box; /* Ensures padding doesn’t alter height */
+    display: flex;
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+}
+
+.back-button {
+    background-color: #3498db;
+}
+
+.back-button:hover {
+    background-color: #2980b9;
+}
+
+.submit-button {
+    background-color: #27ae60;
+}
+
+.submit-button:hover {
+    background-color: #1e874b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .add-schedule {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    input, select, .back-button, .submit-button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    input, select, .back-button, .submit-button {
+        padding: 6px;
+        font-size: 0.8em;
+    }
+}

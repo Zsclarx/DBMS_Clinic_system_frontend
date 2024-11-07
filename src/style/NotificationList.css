@@ -1,0 +1,94 @@
+/* Background Image applied to the entire body */
+body {
+    background-image: url('./vecteezy_healthcare-theme-3d-illustration-of-an-empty-emergency-room_29284412.jpg'); /* Use your hospital image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 20px; /* Space below search input */
+}
+
+.search-input {
+    padding: 10px;
+    padding-left: 40px; /* Add padding to the left to make space for the icon */
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; /* Position icon on the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to center */
+    color: #aaa; /* Change icon color */
+}
+
+/* Notification List Container */
+.notification-list {
+    padding: 20px; /* Padding around the notification list */
+    max-width: 800px;
+    margin: 60px auto; /* Space for header/navbar with top margin */
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text for the whole container */
+}
+
+/* Header Section with Background Image */
+.header {
+    background-image: url('./vecteezy_healthcare-theme-3d-illustration-of-an-empty-emergency-room_29284412.jpg'); /* Replace with your actual header image path */
+    background-size: cover; /* Ensures the image covers the whole header */
+    background-position: center; /* Centers the background image */
+    padding: 60px; /* Space around the header text */
+    margin-bottom: 20px; /* Space below the header */
+    color: #ffffff; /* Change text color for better contrast */
+}
+
+/* Title within Header */
+.header h1 {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align header text */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Add margin below table */
+}
+
+th, td {
+    padding: 12px; /* Padding in table cells */
+    text-align: left; /* Align text to the left in table cells */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5em; /* Responsive font size */
+    }
+    th, td {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .notification-list {
+        padding: 15px; /* Padding for smaller screens */
+    }
+    .header h1 {
+        font-size: 1.2em; /* Smaller header font size */
+    }
+    th, td {
+        padding: 8px; /* Adjust padding for even smaller screens */
+        font-size: 0.8em;
+    }
+}

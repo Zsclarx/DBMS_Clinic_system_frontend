@@ -1,0 +1,193 @@
+.profile-icon {
+    display: inline-block;
+    margin-left: 10px; /* Space between text and icon */
+}
+
+.profile-icon img {
+    width: 40px; /* Set desired width */
+    height: 40px; /* Set desired height */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+
+.notifications-dropdown {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.notifications-button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 20px 40px; /* Increase padding to make the button larger */
+    font-size: 22px; /* Increase font size for better readability */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.notifications-button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff414d;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.patient-dashboard {
+    padding: 45px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+/* Styling for the welcome card */
+.welcome-card {
+    background: linear-gradient(135deg, #5eb5ef, #0073e6); /* Enhanced gradient background */
+    padding: 90px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 64px;
+}
+
+.welcome-card h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.welcome-card p {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+/* Notifications Dropdown */
+.notifications-dropdown {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.notifications-button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 24px;
+    height: 50px;
+    width:11rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.notifications-button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.notifications-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-top: 10px;
+    z-index: 1;
+    text-align: left;
+    color: #333;
+}
+
+.notifications-dropdown:hover .notifications-panel {
+    display: block;
+}
+
+.notifications-panel p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Dashboard options grid */
+.dashboard-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Styling for each dashboard card */
+.dashboard-card {
+    text-decoration: none;
+    color: white;
+    background-color: #ffb15d;
+    padding: 35px;
+    min-height: 140px;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), inset 0 -4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-card:hover {
+    background-color: #005bb5;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3), inset 0 -6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-options {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .dashboard-options {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row on medium screens */
+    }
+}

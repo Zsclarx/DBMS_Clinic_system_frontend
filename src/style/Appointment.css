@@ -1,0 +1,163 @@
+/* Navbar Styling for Appointments Page */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark gray */
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 40px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 20px;
+}
+
+.navbar-links a:hover {
+  background-color: #575757;
+  transform: scale(1.05);
+}
+
+/* Adjust body padding to account for fixed navbar */
+body {
+  margin: 0;
+  padding-top: 70px;
+}
+
+/* Container for appointments with scrollable content */
+.appointments-container {
+  max-width: 1200px;
+  margin: 7rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  max-height: 80vh; /* Limit height for scroll */
+  overflow-y: auto; /* Enable vertical scroll */
+}
+
+/* Header Styling */
+.appointments-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Filter Section Styling */
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.filters input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.filters button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+.filters button:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive table styling */
+.appointments-table-wrapper {
+  overflow-x: auto; /* Enable horizontal scroll for table on smaller screens */
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block; /* Allow table to scroll horizontally on small screens */
+}
+
+.appointments-table th, .appointments-table td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1rem;
+  white-space: nowrap; /* Prevent cell content wrapping */
+}
+
+.appointments-table th {
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: 600;
+}
+
+.appointments-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.appointments-table tr:hover {
+  background-color: #f1f9ff;
+}
+
+.appointments-table td {
+  color: #555;
+}
+
+/* Loading Text Styling */
+.appointments-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 2rem;
+}

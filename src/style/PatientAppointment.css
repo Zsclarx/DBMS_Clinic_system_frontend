@@ -1,0 +1,178 @@
+/* Container styling */
+.patient-appointments-container {
+  max-width: 900px; /* Keep max-width for responsiveness */
+  margin: 100px auto 40px; /* Increased top margin to 100px */
+  padding: 50px; /* Increased padding to make the container larger */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header styles */
+h1, h2 {
+  color: #3b5998;
+  text-align: center;
+  margin-top: 0;
+  font-size: 4em; /* Increased header size */
+}
+
+h2 {
+  margin-top: 30px; /* Increased margin */
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 12px; /* Increased padding */
+  font-size: 3em; /* Increased font size */
+}
+
+/* Table styling */
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px; /* Increased margin */
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 30px 37.5px; /* Increased padding for larger cells */
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1.5em; /* Increased font size for better readability */
+}
+
+.appointments-table th {
+  background-color: #f8f9fa;
+  color: #3b5998;
+  font-weight: 600;
+}
+
+.appointments-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.appointments-table tbody tr:hover {
+  background-color: #e6f7ff;
+  cursor: pointer;
+}
+
+/* Button styles */
+button {
+  padding: 15px 37.5px; /* Increased padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5em; /* Increased button font size */
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button[type="button"] {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+button[type="submit"] {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+/* Feedback form styling */
+.feedback-form {
+  margin-top: 30px; /* Increased margin */
+  padding: 50px; /* Increased padding */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.feedback-form h3 {
+  color: #333;
+  font-size: 2em; /* Increased title size */
+  margin-bottom: 25px; /* Increased margin for spacing */
+  text-align: center;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 15px; /* Increased margin for spacing */
+  font-weight: bold;
+  color: #333;
+}
+
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 15px; /* Increased padding for larger input fields */
+  margin-top: 10px; /* Increased margin for better spacing */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+  border-color: #3b5998;
+  outline: none;
+}
+
+/* Button alignment */
+.feedback-form button {
+  margin-top: 20px; /* Increased margin for better spacing */
+  margin-right: 15px; /* Increased margin for better spacing */
+  width: calc(50% - 10px); /* Maintain the button width */
+  padding: 15px; /* Increased button padding */
+}
+
+/* Filter button styles */
+.appointment-section button {
+  margin: 15px 5px; /* Increased margins */
+  background-color: #5cb85c;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.appointment-section button:hover {
+  background-color: #4cae4c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .appointments-table, .feedback-form select, .feedback-form textarea {
+      font-size: 1.1em; /* Slightly increase font size */
+  }
+  
+  button, .feedback-form button {
+      width: 100%;
+      margin: 10px 0;
+      font-size: 1em; /* Increase button font size */
+  }
+}
+.star-rating {
+  display: inline-flex;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ddd; /* Default color for empty stars */
+}
+
+.star {
+  margin-right: 5px;
+}
+
+.star.filled {
+  color: #ffcc00; /* Color for filled stars */
+}
+
+.star:hover,
+.star:focus {
+  color: #ffcc00; /* Highlight the star on hover */
+}

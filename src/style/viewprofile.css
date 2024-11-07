@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body full height */
+    background-color: #f4f4f4; /* Optional: background color */
+}
+
+.profile-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Profile avatar styling */
+.profile-info img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 3px solid #ddd;
+}
+
+/* Heading for user's name */
+.profile-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Styling for all profile information paragraphs */
+.profile-info p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Input fields for editing mode */
+.profile-info input {
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling for edit and save/cancel actions */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button styling for save/cancel buttons in a group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Cancel button styling */
+button.cancel {
+    background-color: #dc3545; /* Bootstrap danger color for cancel button */
+}
+
+button.cancel:hover {
+    background-color: #c82333;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    opacity: 0.9;
+}

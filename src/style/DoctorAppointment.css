@@ -1,0 +1,60 @@
+.doctor-appointments-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-appointments-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.appointments-table th, .appointments-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.appointments-table th {
+    background-color: #0073e6;
+    color: white;
+    font-weight: bold;
+}
+
+.confirm-btn, .decline-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.confirm-btn {
+    background-color: #4caf50; /* Green */
+    color: white;
+}
+
+.confirm-btn:hover {
+    background-color: #45a049;
+}
+
+.decline-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.decline-btn:hover {
+    background-color: #d32f2f;
+}

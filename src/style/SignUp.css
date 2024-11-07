@@ -1,0 +1,87 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9ecef;
+}
+
+.sign-up-container {
+  max-width: 900px;
+  margin: 5% auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sign-up-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-height: 80vh; /* Limit the form height to 80% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 20px; /* Add some padding to prevent scroll bar overlap */
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  width: 100%;
+  padding: 15px; /* Increased padding for larger input size */
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+button {
+  width: 120px; /* Adjusted button width */
+  height: 45px; /* Set a smaller height */
+  position: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  margin-top: 20px; /* Add some space above the button */
+}
+
+@media (max-width: 600px) {
+  .sign-up-form {
+    flex-direction: column;
+  }
+}

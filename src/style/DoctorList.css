@@ -1,0 +1,137 @@
+/* DoctorList.css */
+
+/* Container for the doctor list */
+.doctors-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  overflow-y: auto; /* Enables vertical scrolling if content overflows */
+  height: 80vh; /* Sets the height of the container for scrollable content */
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search bar styling */
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Add doctor button styling */
+.add-doctor-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-doctor-button:hover {
+  background-color: #218838;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+/* Loading message styling */
+.loading {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Doctor button styling */
+.doctor-button {
+  background-color: #23899f; /* Button background color */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Ample padding for better clickability */
+  margin: 10px 0; /* Space between buttons */
+  width: 100%; /* Full width */
+  text-align: left; /* Align text to the left */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  transition: background-color 0.3s; /* Smooth background change */
+  height: 105px;
+}
+
+.doctor-button:hover {
+  background-color: #59bcd2; /* Darker shade on hover */
+}
+
+/* Doctor info styling */
+.doctor-info p {
+  margin: 5px 0; /* Space between paragraphs */
+  font-size: 14px; /* Font size for readability */
+  line-height: 1.4; /* Improve readability with line-height */
+}
+
+/* Responsive styles for mobile and tablet devices */
+@media (max-width: 768px) {
+  .doctors-container {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Reduce font size for the heading */
+  }
+
+  .search-bar {
+    max-width: 100%; /* Ensure search bar is full width */
+    padding: 8px; /* Smaller padding for mobile */
+  }
+
+  .add-doctor-button {
+    width: 100%; /* Make button take full width */
+    padding: 12px 0; /* Adjust padding for mobile */
+  }
+
+  .doctor-button {
+    padding: 10px; /* Adjust padding for better mobile experience */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .doctor-info p {
+    font-size: 12px; /* Smaller font size for better mobile readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .doctors-container {
+    padding: 10px; /* Further reduce padding on small devices */
+  }
+
+  h1 {
+    font-size: 1.3em; /* Reduce font size for very small screens */
+  }
+
+  .doctor-button {
+    padding: 8px; /* Even smaller padding */
+  }
+
+  .doctor-info p {
+    font-size: 10px; /* Smaller font size for very small screens */
+  }
+}

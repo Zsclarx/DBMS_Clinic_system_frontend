@@ -1,0 +1,156 @@
+/* General Styles */
+.doctor-detail-container {
+  background-color: #eafaf1; /* Light green background */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 100%;
+  margin: 20px auto;
+  box-sizing: border-box;
+  overflow-y: auto; /* Allow vertical scrolling */
+  max-height: 90vh; /* Prevent the form from growing too tall */
+}
+
+h1 {
+  color: #2d572c; /* Dark green */
+  text-align: center;
+  font-size: 28px; /* Slightly larger font size for the header */
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #2d572c; /* Dark green */
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #c2e2d4; /* Light green border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input:focus, select:focus {
+  border-color: #2d572c; /* Dark green on focus */
+  outline: none;
+}
+
+button {
+  background-color: #2d572c; /* Dark green */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #3c6f3e; /* Slightly lighter green on hover */
+}
+
+.error {
+  color: red; /* Error messages in red */
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Qualification fields styling */
+.qualification-group {
+  display: flex;
+  flex-direction: row; /* Align qualifications horizontally */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.qualification-group input {
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-bottom: 10px; /* Space below qualifications */
+}
+
+button[type="button"] {
+  background-color: #8a9e7f; /* Light green for 'Add More' button */
+  color: white;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #6f7f5a; /* Darker green on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .doctor-detail-container {
+    padding: 30px;
+    margin: 50px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input, select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .doctor-detail-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input, select {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    margin-top: 20px;
+  }
+
+  .navbar-links li {
+    margin-bottom: 10px;
+  }
+}
